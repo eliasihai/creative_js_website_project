@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #17181a;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#logo {
+    color: #fff;
+    font-family: 'Abril Fatface';
+}
+
+.nav-header {
+    min-height: 10vh;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    width: 80%;
+    padding: auto;
+    margin: auto;
+}
+
+.line1, .line2 {
+    width: 3rem;
+    height: 0.2rem;
+    margin: 0.4rem;
+    background: #fff;
+    pointer-events: none;
+}
+
+.slide {
+    min-height: 100vh;
+    margin: 0 auto 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
