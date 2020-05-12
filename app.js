@@ -1,31 +1,29 @@
-const hikeExp = document.querySelector('.hike-exp');
-const slide = document.querySelector('.slide')
+let controller;
+let slideScene;
 
-// window.addEventListener('scroll', scrollReveal);
-
-// function scrollReveal(){
-//     const hikePos = hikeExp.getBoundingClientRect().top;
-//     const windowHeight = window.innerHeight /1.5;
-//     console.log(`hikePos ${hikePos}`)
-//     console.log(`windowHeight ${windowHeight}`)
-//     if (hikePos < windowHeight){
-//         hikeExp.style.color = "red"
-//     }else{
-//         hikeExp.style.color = "white"
-//     }
-// }
-
-let options = {
-    threshhold = 0.5
+function animateSlides() {
+    //Init Controller
+    controller = new ScrollMagic.Controller();
+    //Select some things
+    const sliders = document.querySelectorAll('.slide');
+    const nav = document.querySelectorAll('.nav-header');
+    //Loop over each slide
+    sliders.forEach(slide => {
+        const revealImg = slide.querySelector('.reveal-img');
+        const img = slide.querySelector('img');
+        const revealText = slide.querySelector('.reveal-text');
+        //GSAP
+        const slideTl = gsap.timeline({
+            defaults: {
+                duration: 1,
+                ease: 'power2.inOut'
+            }
+        })
+        slideTl.fromTo(nav, { y: '-100%' }, { y: '0%' }, '+=0.3')
+        slideTl.fromTo(revealImg, { x: "0%" }, { x: "100%" });
+        slideTl.fromTo(img, { scale: 2 }, { scale: 1 }, '+=0.5');
+        slideTl.fromTo(revealText, { x: "0%" }, { x: "100%" } , '-=0.5');
+        
+    });
 }
-
-let observer = new IntersectionObserver(slideAnimation,options);
-
-function slideAnimation(entries){
-entries.forEach(entry => {
-    console.log(entry)
-});
-}
-observer.observe(slide);
-
-
+animateSlides();
