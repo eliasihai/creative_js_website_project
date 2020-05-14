@@ -129,9 +129,9 @@ barba.init({
             beforeEnter() {
                 logo.href = '../index.html';
                 detailAnimation();
-               
+
             },
-            beforeLeave(){
+            beforeLeave() {
                 controller.destroy();
                 detailScene.destroy();
             }
@@ -177,11 +177,11 @@ barba.init({
                     { opacity: 1 }
                 );
                 tl.fromTo('.nav-header',
-                1,
-                { y: '-100%' },
-                { y: '0%', ease: 'power2.inOut' },
-                '-=1.5'
-            );
+                    1,
+                    { y: '-100%' },
+                    { y: '0%', ease: 'power2.inOut' },
+                    '-=1.5'
+                );
             }
         }
     ]
@@ -197,7 +197,7 @@ function detailAnimation() {
         const nextImg = nextSlide.querySelector('img');
         slideTl.fromTo(slide, { opacity: 1 }, { opacity: 0 });
         slideTl.fromTo(nextSlide, { opacity: 0 }, { opacity: 1 }, '-=1');
-        slideTl.fromTo(nextImg, { x: '50%' }, { x: '0%' },)
+        slideTl.fromTo(nextImg, { x: '50%' }, { x: '0%' })
         //Scene
         detailScene = new ScrollMagic.Scene({
             triggerElement: slide,
@@ -219,3 +219,5 @@ function detailAnimation() {
 burger.addEventListener('click', navToggle)
 window.addEventListener('mousemove', cursor);
 window.addEventListener('mouseover', activeCursor);
+
+
