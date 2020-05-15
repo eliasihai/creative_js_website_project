@@ -135,6 +135,30 @@ barba.init({
                 controller.destroy();
                 detailScene.destroy();
             }
+        },
+        {
+            namespace: 'hike',
+            beforeEnter() {
+                logo.href = '../index.html';
+                detailAnimation();
+
+            },
+            beforeLeave() {
+                controller.destroy();
+                detailScene.destroy();
+            }
+        },
+        {
+            namespace: 'mountain',
+            beforeEnter() {
+                logo.href = '../index.html';
+                detailAnimation();
+
+            },
+            beforeLeave() {
+                controller.destroy();
+                detailScene.destroy();
+            }
         }
     ],
     transitions: [
