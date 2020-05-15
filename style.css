@@ -300,18 +300,22 @@ body.hide {
     color: rgb(86, 124, 228)
 }
 
-.fashion-text p,
-.hike-text p,
-.mountain-text p
- {
+.fashion-text p, .hike-text p, .mountain-text p {
     font-size: 2rem;
     padding: 2rem 2rem 0rem 0rem;
     margin-bottom: 10rem;
 }
 
-.fashion-nr,
-.hike-nr,
-.mountain-nr {
+.fashion-nr, .hike-nr, .mountain-nr {
+    font-size: 15rem;
+    position: absolute;
+    left: 44%;
+    bottom: 10%;
+    color: #fff;
+    opacity: 0.2;
+}
+
+.fashion-nr1, .hike-nr1, .mountain-nr1 {
     font-size: 15rem;
     position: absolute;
     left: 44%;
@@ -346,13 +350,13 @@ body.hide {
 
 /* Media Query */
 
-@media screen and (max-width: 1500px) {
+/* @media screen and (max-width: 1500px) {
     .hero-img {
         height: 50vh
     }
-}
+} */
 
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
     main {
         width: 100%;
         margin: 0;
@@ -423,4 +427,7 @@ body.hide {
         text-align: center;
         margin: 2rem auto;
     }
-}
+} */
+
+@import "style1680.css";
+@import url("style1680.css");

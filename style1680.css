@@ -1,0 +1,52 @@
+@media screen and (max-width: 1680px) {
+    .hero-desc h2 {
+        font-size: 3.2rem;
+    }
+    .hero-desc p {
+        font-size: 1.3rem;
+    }
+    /* Other pages */
+    .fashion1, .hike1, .mountain1 {
+        min-height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        margin: auto;
+        color: #fff;
+        margin-top: 4rem;
+        flex-wrap: wrap;
+        position: relative;
+    }
+    .fashion2, .fashion3, .hike2, .hike3, .mountain2, .mountain3 {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        margin: auto;
+        color: #fff;
+        margin-top: 4rem;
+        flex-wrap: wrap;
+        position: relative;
+    }
+    .fashion-text h1, .hike-text h1, .mountain-text h1 {
+        font-size: 4rem;
+        padding: 4rem 0rem;
+    }
+    .fashion-text p, .hike-text p, .mountain-text p {
+        font-size: 1.8rem;
+        padding: 2rem 2rem 0rem 0rem;
+        margin-bottom: 10rem;
+    }
+    .fashion-nr, .hike-nr, .mountain-nr {
+        font-size: 12rem;
+        left: 30%;
+        bottom: 12%;
+    }
+    .fashion-nr1, .hike-nr1, .mountain-nr1 {
+        font-size: 12rem;
+        left: 30%;
+        bottom: 6%;
+    }
+}
