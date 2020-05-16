@@ -348,46 +348,93 @@ body.hide {
     z-index: 3;
 }
 
-/* Media Query */
-
-/* @media screen and (max-width: 1500px) {
-    .hero-img {
-        height: 50vh
+@media screen and (max-width: 1680px) {
+    .hero-desc h2 {
+        font-size: 3.2rem;
     }
-} */
-
-/* @media screen and (max-width: 1024px) {
-    main {
-        width: 100%;
-        margin: 0;
+    .hero-desc p {
+        font-size: 1.3rem;
     }
+    /* Other pages */
+    .fashion1, .hike1, .mountain1 {
+        min-height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        margin: auto;
+        color: #fff;
+        margin-top: 4rem;
+        flex-wrap: wrap;
+        position: relative;
+    }
+    .fashion2, .fashion3, .hike2, .hike3, .mountain2, .mountain3 {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        margin: auto;
+        color: #fff;
+        margin-top: 4rem;
+        flex-wrap: wrap;
+        position: relative;
+    }
+    .fashion-text h1, .hike-text h1, .mountain-text h1 {
+        font-size: 4rem;
+        padding: 4rem 0rem;
+    }
+    .fashion-text p, .hike-text p, .mountain-text p {
+        font-size: 1.8rem;
+        padding: 2rem 2rem 0rem 0rem;
+        margin-bottom: 10rem;
+    }
+    .fashion-nr, .hike-nr, .mountain-nr {
+        font-size: 12rem;
+        left: 30%;
+        bottom: 12%;
+    }
+    .fashion-nr1, .hike-nr1, .mountain-nr1 {
+        font-size: 12rem;
+        left: 30%;
+        bottom: 6%;
+    }
+}
+
+/* 1270 */
+
+@media screen and (max-width: 1024px) {
     .slide {
-        display: block;
+        display: flex;
+        flex-direction: column;
         text-align: center;
+        padding: 0.9rem 0rem;
     }
     .hero-desc {
-        padding: 0;
+        padding: 1rem 0rem;
     }
     .hero-desc h2 {
         font-size: 1.6rem;
-        padding: 1rem 0rem;
+        padding: 0.5rem 0rem;
     }
     .hero-desc p {
-        padding: 2rem 1rem;
+        padding: 0rem 1rem;
         font-size: 1rem;
         line-height: 1.5rem;
         text-align: center;
+        margin: 0;
     }
     .hero-img {
-        margin-top: 4rem;
+        margin-top: 0rem;
     }
     .hero-img img {
-        width: 70%;
+        width: 90%;
+        max-width: 90%;
         object-fit: cover;
     }
     .explore {
         width: 60%;
-        margin: auto;
+        margin: 1rem auto;
     }
     .detail-slide {
         width: 100%;
@@ -427,7 +474,54 @@ body.hide {
         text-align: center;
         margin: 2rem auto;
     }
-} */
 
-@import "style1680.css";
-@import url("style1680.css");
+    /* Other Pages */
+    .fashion1, .hike1, .mountain1 {
+        min-height: 70vh;
+        width: 100%;
+        margin: 5rem 0rem;
+        position: relative;
+    }
+
+    .fashion2, .fashion3, .hike2, .hike3, .mountain2, .mountain3 {
+        min-height: 70vh;
+        width: 100%;
+        margin: 5rem auto;
+        position: relative;
+    }
+    .fashion2,  .hike2,  .mountain2 {
+        min-height: 70vh;
+        width: 100%;
+        margin: 13rem auto;
+    }
+
+    .fashion-text h1, .hike-text h1, .mountain-text h1 {
+        font-size: 3rem;
+        padding: 0rem;
+    }
+    .fashion-text p, .hike-text p, .mountain-text p {
+        font-size: 1.5rem;
+        padding: 2rem 2rem;
+        margin-bottom: 0rem;
+    }
+    .fashion-nr, .hike-nr, .mountain-nr{
+        font-size: 8rem;
+        left: 41%;
+        bottom:0%;
+    }
+    .fashion-nr1, .hike-nr1, .mountain-nr1 {
+        font-size: 8rem;
+        left: 42%;
+        bottom:4%;
+    }
+    .fashion-img img, .hike-img img, .mountain-img img {
+        width: 80%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .fashion-img .hike-img, .mountain-img {
+        height: 70vh;
+        flex-basis: 30rem;
+    }
+}
