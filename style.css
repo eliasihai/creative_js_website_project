@@ -278,7 +278,7 @@ body.hide {
 }
 
 .fashion-img img, .hike-img img, .mountain-img img {
-    width: 100%;
+    width: 75%;
     height: 100%;
     object-fit: cover;
 }
@@ -391,12 +391,12 @@ body.hide {
     }
     .fashion-nr, .hike-nr, .mountain-nr {
         font-size: 12rem;
-        left: 30%;
+        left: 40%;
         bottom: 12%;
     }
     .fashion-nr1, .hike-nr1, .mountain-nr1 {
         font-size: 12rem;
-        left: 30%;
+        left: 40%;
         bottom: 6%;
     }
 }
@@ -404,37 +404,66 @@ body.hide {
 /* 1270 */
 
 @media screen and (max-width: 1024px) {
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
+    ::-webkit-scrollbar-track {
+        -webkit-box-shadow: none;
+        border-radius: 0px;
+    }
+    ::-webkit-scrollbar-thumb {
+        border-radius: 0px;
+        -webkit-box-shadow: none;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    main{
+        overflow-x: hidden;
+    }
+    .cursor {
+        display: none;
+    }
     .slide {
+        overflow-x: hidden;
         display: flex;
         flex-direction: column;
         text-align: center;
         padding: 0.9rem 0rem;
+        margin-top: 5rem;
+        margin-bottom: 0;
     }
     .hero-desc {
-        padding: 1rem 0rem;
+        /* max-height: 90vh; */
+        padding: 1rem 0rem 0rem 0rem;
     }
     .hero-desc h2 {
-        font-size: 1.6rem;
+        font-size: 2.5rem;
         padding: 0.5rem 0rem;
+        margin: 1rem auto;
     }
     .hero-desc p {
-        padding: 0rem 1rem;
-        font-size: 1rem;
-        line-height: 1.5rem;
+        padding: 1rem 1.5rem;
+        font-size: 1.7rem;
+        line-height: 3rem;
         text-align: center;
-        margin: 0;
+        margin: 2rem auto;
     }
     .hero-img {
         margin-top: 0rem;
+        flex-basis: 0rem;
     }
     .hero-img img {
-        width: 90%;
-        max-width: 90%;
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        max-height: 100%;
         object-fit: cover;
     }
     .explore {
-        width: 60%;
+        width: 90%;
         margin: 1rem auto;
+        padding: 1rem 0rem ;
     }
     .detail-slide {
         width: 100%;
@@ -474,54 +503,184 @@ body.hide {
         text-align: center;
         margin: 2rem auto;
     }
-
     /* Other Pages */
     .fashion1, .hike1, .mountain1 {
         min-height: 70vh;
         width: 100%;
-        margin: 5rem 0rem;
+        margin: 0rem 0rem;
         position: relative;
     }
-
     .fashion2, .fashion3, .hike2, .hike3, .mountain2, .mountain3 {
         min-height: 70vh;
         width: 100%;
-        margin: 5rem auto;
+        margin: 8rem 0rem ;
         position: relative;
     }
-    .fashion2,  .hike2,  .mountain2 {
-        min-height: 70vh;
-        width: 100%;
-        margin: 13rem auto;
+    .fashion2, .hike2, .mountain2 {
+        margin: 7rem auto;
     }
-
     .fashion-text h1, .hike-text h1, .mountain-text h1 {
-        font-size: 3rem;
+        font-size: 4rem;
         padding: 0rem;
     }
     .fashion-text p, .hike-text p, .mountain-text p {
-        font-size: 1.5rem;
-        padding: 2rem 2rem;
+        font-size: 2rem;
+        padding: 1rem 2rem;
         margin-bottom: 0rem;
     }
-    .fashion-nr, .hike-nr, .mountain-nr{
+    .fashion-nr, .hike-nr, .mountain-nr {
         font-size: 8rem;
         left: 41%;
-        bottom:0%;
+        bottom: 0%;
     }
     .fashion-nr1, .hike-nr1, .mountain-nr1 {
         font-size: 8rem;
         left: 42%;
-        bottom:4%;
+        bottom: 4%;
     }
     .fashion-img img, .hike-img img, .mountain-img img {
         width: 80%;
         height: 100%;
         object-fit: cover;
+        margin: 0rem auto;
     }
-
     .fashion-img .hike-img, .mountain-img {
         height: 70vh;
         flex-basis: 30rem;
     }
+    .detail-slide {
+        width: 100%;
+        text-align: center;
+    }
+    .fashion-text p {
+        font-size: 1.4rem;
+        margin-bottom: 5rem;
+        padding: 0;
+    }
+    .fashion-text h1 {
+        margin: 2rem 0rem;
+    }
+    .fashion-nr {
+        font-size: 8rem;
+        left: 36%;
+    }
+    .fashion-img img {
+        width: 90%;
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    body {
+        overflow-x: hidden;
+    }
+    main {
+        overflow-x: hidden;
+        /* width: 100% !important;
+        max-width: 100% !important; */
+    }
+    .nav-header {
+        width: 80%;
+        max-width: 80%;
+        padding: 0 auto;
+        margin: 0 auto;
+    }
+    .slide {
+        height: 90vh;
+        min-height: 90vh;
+        flex-direction: column;
+        padding: 0.9rem 0rem;
+        margin-top: 10rem;
+        width: 90%;
+    }
+    .contact h2 {
+        font-size: 2rem;
+        text-align: center;
+        margin: 3rem auto;
+    }
+    .contact p {
+        font-size: 1.2rem;
+        text-align: center;
+        margin: 2rem auto;
+    }
+   
+    .hero-desc h2 {
+        font-size: 2rem;
+        padding: 0rem 0rem;
+        margin: 0 auto;
+    }
+    .hero-desc {
+        padding: 0rem;
+        flex-basis: 25rem;
+    }
+    .hero-desc p {
+        padding: 1rem 1.5rem;
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+        text-align: center;
+        margin: 0rem auto;
+    }
+    .hero-img {
+        height: 70vh;
+        margin: 0rem auto;
+        padding: 0;
+        flex-basis: 25rem;
+    }
+    .hero-img img {
+        height: 70vh;
+        width: 90%;
+        max-width: 90%;
+        object-fit: cover;
+    }
+
+    .fashion1, .hike1, .mountain1 {
+        min-height: 90vh;
+        width: 90%;
+        margin: 0.5rem auto;
+    }
+    .fashion2, .hike2, .mountain2, .fashion3, .hike3, .mountain3 {
+        min-height: 90vh;
+        width: 90%;
+        margin: 0rem auto 0 auto;
+    }
+    .fashion-text h1, .hike-text h1, .mountain-text h1 {
+        font-size: 1.5rem;
+        padding: 0rem;
+    }
+    .fashion-text p, .hike-text p, .mountain-text p {
+        font-size: 1.1rem;
+        padding: 1rem 1rem;
+        margin-bottom: 0rem;
+    }
+    .fashion-img .hike-img, .mountain-img {
+        height: 70vh;
+        flex-basis: 25rem;
+    }
+    .fashion-img img, .hike-img img, .mountain-img img {
+        width: 80%;
+        height: 80%;
+        object-fit: cover;
+        margin: 0rem auto;
+    }
+    .explore {
+        font-size: 1rem;
+        padding: 1rem 1rem;
+        margin: 0 auto;
+    }
+    .cursor {
+        display: none;
+    }
+    /* ::-webkit-scrollbar {
+        width: 0px;
+    }
+    ::-webkit-scrollbar-track {
+        -webkit-box-shadow: none;
+        border-radius: 0px;
+    }
+    ::-webkit-scrollbar-thumb {
+        border-radius: 0px;
+        -webkit-box-shadow: none;
+    } */
 }
